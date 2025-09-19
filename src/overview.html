@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pepsico | Time-off app</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  <!-- custom font  -->
+  <link rel="stylesheet" href="./fonts/stylesheet.css">
+
+
+
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="lg:pb-0 pb-20">
+
+
+  <header class="bg-white  lg:py-10 sm:py-8 py-5 sticky top-0 left-0 z-50 border-b border-[#f1f1f1]">
+    <div class="container flex flex-row items-center justify-between flex-wrap">
+      <div class="">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl text-dark font-bold">Schedule</h2>
+      </div>
+      <div class="">
+        <ul class="flex flex-row justify-end flex-wrap gap-20 items-center">
+          <li class="lg:block hidden">
+            <a href="">
+              <svg id="s" xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 15.4 16.278"
+                fill="currentColor">
+                <path id="Path_22" data-name="Path 22"
+                  d="M17.251,7.467l-3.52-3.142a4.17,4.17,0,0,0-5.562,0L4.649,7.467a4.182,4.182,0,0,0-1.4,3.124v5.6a3.33,3.33,0,0,0,3.3,3.353h8.8a3.33,3.33,0,0,0,3.3-3.353v-5.6A4.2,4.2,0,0,0,17.251,7.467ZM12.93,18.211H8.97v-2.86a1.98,1.98,0,0,1,3.96,0Zm4.4-2.033a2.012,2.012,0,0,1-1.98,2.033h-1.1v-2.86a3.3,3.3,0,0,0-6.6,0v2.86H6.55a2.006,2.006,0,0,1-1.98-2.033v-5.6a2.875,2.875,0,0,1,.959-2.138L9.049,5.3a2.851,2.851,0,0,1,3.8,0l3.52,3.142a2.875,2.875,0,0,1,.959,2.138Z"
+                  transform="translate(-3.25 -3.263)" fill="currentColor" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="lg:block hidden">
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 24.181 24.181"
+                fill="currentColor">
+                <path id="calendar-delete"
+                  d="M4.72,1V2.86H3.79A2.813,2.813,0,0,0,1,5.665v16.7a2.814,2.814,0,0,0,2.79,2.812h18.6a2.814,2.814,0,0,0,2.79-2.812V5.665a2.813,2.813,0,0,0-2.79-2.8h-.93V1H19.6V2.86H6.58V1ZM3.79,4.72h.93V6.58H6.58V4.72H19.6V6.58h1.86V4.72h.93a.922.922,0,0,1,.93.945V8.44H2.86V5.665A.922.922,0,0,1,3.79,4.72ZM2.86,10.3H23.321V22.369a.928.928,0,0,1-.93.952H3.79a.928.928,0,0,1-.93-.952Z"
+                  transform="translate(-1 -1)" fill="currentColor" />
+              </svg>
+
+            </a>
+          </li>
+
+
+          <li class="lg:block hidden">
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30"" viewBox=" 0 0 15.443 16.278"
+                fill="currentColor">
+                <g id="l" transform="translate(0)">
+                  <g id="Group_5" data-name="Group 5" transform="translate(0 0)">
+                    <path id="Path_25" data-name="Path 25"
+                      d="M11.389,17.276H6.38A1.881,1.881,0,0,1,4.5,15.4V7.05A1.884,1.884,0,0,1,6.1,5.2a1.886,1.886,0,0,0,1.536.81h4.174a1.853,1.853,0,0,0,1.536-.81A1.878,1.878,0,0,1,14.937,7.05v3.339a.626.626,0,0,0,1.252,0V7.05a3.142,3.142,0,0,0-2.521-3.072A1.867,1.867,0,0,0,11.806,2.25H7.632A1.874,1.874,0,0,0,5.771,3.978,3.135,3.135,0,0,0,3.25,7.05V15.4a3.131,3.131,0,0,0,3.13,3.13h5.009a.626.626,0,0,0,0-1.252ZM7.632,3.5h4.174a.626.626,0,1,1,0,1.252H7.632a.626.626,0,1,1,0-1.252Z"
+                      transform="translate(-3.25 -2.25)" fill="currentColor" />
+                    <path id="Path_26" data-name="Path 26"
+                      d="M17.38,14.25a3.13,3.13,0,1,0,3.13,3.13A3.131,3.131,0,0,0,17.38,14.25Zm0,5.009a1.878,1.878,0,1,1,1.878-1.878A1.881,1.881,0,0,1,17.38,19.259Z"
+                      transform="translate(-5.068 -4.233)" fill="currentColor" />
+                    <path id="Path_27" data-name="Path 27"
+                      d="M18.821,16.317a.637.637,0,0,0-.843.284l-.442.893-.217-.217a.626.626,0,0,0-.885.885l.835.835a.625.625,0,0,0,.442.184h.1a.635.635,0,0,0,.459-.334l.835-1.67a.622.622,0,0,0-.284-.843Z"
+                      transform="translate(-5.399 -4.564)" fill="currentColor" />
+                  </g>
+                </g>
+              </svg>
+
+            </a>
+          </li>
+
+
+          <li class="lg:block hidden">
+            <a href="">
+              <span class="relative block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 24 30" fill="currentColor">
+                  <title>Notification</title>
+                  <g>
+                    <path d="M12,30a4,4,0,0,1-4-4,1,1,0,0,1,2,0,2,2,0,0,0,4,0,1,1,0,0,1,2,0A4,4,0,0,1,12,30Z"
+                      fill="currentColor" />
+                    <path
+                      d="M19.893,27H4.107A3.084,3.084,0,0,1,1.04,24.5a2.986,2.986,0,0,1,1.487-3.111A.987.987,0,0,0,3,20.514V13a9,9,0,0,1,18,0v7.514a.99.99,0,0,0,.474.873A2.986,2.986,0,0,1,22.96,24.5,3.084,3.084,0,0,1,19.893,27ZM12,6a7.008,7.008,0,0,0-7,7v7.514a2.989,2.989,0,0,1-1.491,2.614,1,1,0,0,0-.494,1.048A1.083,1.083,0,0,0,4.107,25H19.893a1.084,1.084,0,0,0,1.093-.825,1,1,0,0,0-.5-1.047A2.99,2.99,0,0,1,19,20.514V13A7.008,7.008,0,0,0,12,6Z"
+                      fill="currentColor" />
+                    <path d="M14,6a1,1,0,0,1-1-1V3a1,1,0,0,0-2,0V5A1,1,0,0,1,9,5V3a3,3,0,0,1,6,0V5A1,1,0,0,1,14,6Z"
+                      fill="currentColor" />
+                    <path
+                      d="M1,9.826A1,1,0,0,1,.07,8.457,12.814,12.814,0,0,1,2.3,4.794,1,1,0,1,1,3.807,6.1,10.82,10.82,0,0,0,1.93,9.194,1,1,0,0,1,1,9.826Z"
+                      fill="currentColor" />
+                    <path
+                      d="M23,9.826a1,1,0,0,1-.93-.632A10.793,10.793,0,0,0,20.193,6.1a1,1,0,1,1,1.513-1.308A12.815,12.815,0,0,1,23.93,8.457,1,1,0,0,1,23,9.826Z"
+                      fill="currentColor" />
+                  </g>
+                </svg>
+                <span
+                  class="activeNotification w-3 h-3 rounded-full bg-success inline-block absolute top-[1px] -left-[2px]"></span>
+              </span>
+            </a>
+          </li>
+
+
+          <li>
+            <a href="">
+              <img src="./images/homepage_careers_card_009-caglar-kaya.png" alt="">
+            </a>
+          </li>
+
+
+
+
+
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- menubar for the mobile start  -->
+  <nav class="sm:hidden block fixed bottom-0 left-0 w-full bg-white z-50 shadow-lg">
+
+    <ul class="grid grid-cols-4 items-center">
+      <li class="border-r border-[#f2f2f2] h-full flex justify-center items-center">
+        <a href="" class=" py-6 w-full flex justify-center items-center">
+          <svg id="s" xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 15.4 16.278"
+            fill="currentColor">
+            <path id="Path_22" data-name="Path 22"
+              d="M17.251,7.467l-3.52-3.142a4.17,4.17,0,0,0-5.562,0L4.649,7.467a4.182,4.182,0,0,0-1.4,3.124v5.6a3.33,3.33,0,0,0,3.3,3.353h8.8a3.33,3.33,0,0,0,3.3-3.353v-5.6A4.2,4.2,0,0,0,17.251,7.467ZM12.93,18.211H8.97v-2.86a1.98,1.98,0,0,1,3.96,0Zm4.4-2.033a2.012,2.012,0,0,1-1.98,2.033h-1.1v-2.86a3.3,3.3,0,0,0-6.6,0v2.86H6.55a2.006,2.006,0,0,1-1.98-2.033v-5.6a2.875,2.875,0,0,1,.959-2.138L9.049,5.3a2.851,2.851,0,0,1,3.8,0l3.52,3.142a2.875,2.875,0,0,1,.959,2.138Z"
+              transform="translate(-3.25 -3.263)" fill="currentColor" />
+          </svg>
+        </a>
+      </li>
+
+      <li class="border-r border-[#f2f2f2] h-full flex justify-center items-center">
+        <a href="" class=" py-6 w-full flex justify-center items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 24.181 24.181"
+            fill="currentColor">
+            <path id="calendar-delete"
+              d="M4.72,1V2.86H3.79A2.813,2.813,0,0,0,1,5.665v16.7a2.814,2.814,0,0,0,2.79,2.812h18.6a2.814,2.814,0,0,0,2.79-2.812V5.665a2.813,2.813,0,0,0-2.79-2.8h-.93V1H19.6V2.86H6.58V1ZM3.79,4.72h.93V6.58H6.58V4.72H19.6V6.58h1.86V4.72h.93a.922.922,0,0,1,.93.945V8.44H2.86V5.665A.922.922,0,0,1,3.79,4.72ZM2.86,10.3H23.321V22.369a.928.928,0,0,1-.93.952H3.79a.928.928,0,0,1-.93-.952Z"
+              transform="translate(-1 -1)" fill="currentColor" />
+          </svg>
+
+        </a>
+      </li>
+
+
+      <li class="border-r border-[#f2f2f2] h-full flex justify-center items-center">
+        <a href="" class=" py-6 w-full flex justify-center items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30"" viewBox=" 0 0 15.443 16.278"
+            fill="currentColor">
+            <g id="l" transform="translate(0)">
+              <g id="Group_5" data-name="Group 5" transform="translate(0 0)">
+                <path id="Path_25" data-name="Path 25"
+                  d="M11.389,17.276H6.38A1.881,1.881,0,0,1,4.5,15.4V7.05A1.884,1.884,0,0,1,6.1,5.2a1.886,1.886,0,0,0,1.536.81h4.174a1.853,1.853,0,0,0,1.536-.81A1.878,1.878,0,0,1,14.937,7.05v3.339a.626.626,0,0,0,1.252,0V7.05a3.142,3.142,0,0,0-2.521-3.072A1.867,1.867,0,0,0,11.806,2.25H7.632A1.874,1.874,0,0,0,5.771,3.978,3.135,3.135,0,0,0,3.25,7.05V15.4a3.131,3.131,0,0,0,3.13,3.13h5.009a.626.626,0,0,0,0-1.252ZM7.632,3.5h4.174a.626.626,0,1,1,0,1.252H7.632a.626.626,0,1,1,0-1.252Z"
+                  transform="translate(-3.25 -2.25)" fill="currentColor" />
+                <path id="Path_26" data-name="Path 26"
+                  d="M17.38,14.25a3.13,3.13,0,1,0,3.13,3.13A3.131,3.131,0,0,0,17.38,14.25Zm0,5.009a1.878,1.878,0,1,1,1.878-1.878A1.881,1.881,0,0,1,17.38,19.259Z"
+                  transform="translate(-5.068 -4.233)" fill="currentColor" />
+                <path id="Path_27" data-name="Path 27"
+                  d="M18.821,16.317a.637.637,0,0,0-.843.284l-.442.893-.217-.217a.626.626,0,0,0-.885.885l.835.835a.625.625,0,0,0,.442.184h.1a.635.635,0,0,0,.459-.334l.835-1.67a.622.622,0,0,0-.284-.843Z"
+                  transform="translate(-5.399 -4.564)" fill="currentColor" />
+              </g>
+            </g>
+          </svg>
+
+        </a>
+      </li>
+
+
+      <li class="h-full flex justify-center items-center">
+        <a href="" class=" py-6 w-full flex justify-center items-center">
+          <span class="relative block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 24 30" fill="currentColor">
+              <title>Notification</title>
+              <g>
+                <path d="M12,30a4,4,0,0,1-4-4,1,1,0,0,1,2,0,2,2,0,0,0,4,0,1,1,0,0,1,2,0A4,4,0,0,1,12,30Z"
+                  fill="currentColor" />
+                <path
+                  d="M19.893,27H4.107A3.084,3.084,0,0,1,1.04,24.5a2.986,2.986,0,0,1,1.487-3.111A.987.987,0,0,0,3,20.514V13a9,9,0,0,1,18,0v7.514a.99.99,0,0,0,.474.873A2.986,2.986,0,0,1,22.96,24.5,3.084,3.084,0,0,1,19.893,27ZM12,6a7.008,7.008,0,0,0-7,7v7.514a2.989,2.989,0,0,1-1.491,2.614,1,1,0,0,0-.494,1.048A1.083,1.083,0,0,0,4.107,25H19.893a1.084,1.084,0,0,0,1.093-.825,1,1,0,0,0-.5-1.047A2.99,2.99,0,0,1,19,20.514V13A7.008,7.008,0,0,0,12,6Z"
+                  fill="currentColor" />
+                <path d="M14,6a1,1,0,0,1-1-1V3a1,1,0,0,0-2,0V5A1,1,0,0,1,9,5V3a3,3,0,0,1,6,0V5A1,1,0,0,1,14,6Z"
+                  fill="currentColor" />
+                <path
+                  d="M1,9.826A1,1,0,0,1,.07,8.457,12.814,12.814,0,0,1,2.3,4.794,1,1,0,1,1,3.807,6.1,10.82,10.82,0,0,0,1.93,9.194,1,1,0,0,1,1,9.826Z"
+                  fill="currentColor" />
+                <path
+                  d="M23,9.826a1,1,0,0,1-.93-.632A10.793,10.793,0,0,0,20.193,6.1a1,1,0,1,1,1.513-1.308A12.815,12.815,0,0,1,23.93,8.457,1,1,0,0,1,23,9.826Z"
+                  fill="currentColor" />
+              </g>
+            </svg>
+            <span
+              class="activeNotification w-3 h-3 rounded-full bg-success inline-block absolute top-[1px] -left-[2px]"></span>
+          </span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="">
+      <a href="#me"
+        class="absolute sm:-top-9 -top-6 left-0 right-0 sm:w-[70px] w-12 inline-flex justify-center m-auto"><img
+          src="./images/pluse.svg" alt="pluse"></a>
+    </div>
+  </nav>
+  <!-- menubar for the mobile end  -->
+
+
+
+
+  <main>
+    <section class="bg-white py-6">
+      <div class="container">
+        <div class="flex flex-row justify-between items-center sm:px-6">
+          <button class="cursor-pointer"><img src="./images/chevron-left.svg" alt="left"
+              class="sm:w-auto w-[6px]"></button>
+          <h2 class="lg:text-2xl sm:text-xl text-sm text-dark font-bold">2025</h2>
+          <button class="cursor-pointer"><img src="./images/chevron-right.svg" alt="right"
+              class="sm:w-auto w-[6px]"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="lg:py-20 pt-0 pb-10">
+      <div class="container lg:!px-4 !pl-0 !pr-0">
+        <div class="grid lg:grid-cols-2 grid-cols-1 xl:gap-[130px] gap-16">
+          <div class="">
+            <h2>Overview</h2>
+            <div class="w-full max-w-lg space-y-4">
+
+              <!-- Leave Request Item (open initially) -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button onclick="toggleDetails(this)"
+                  class="w-full flex justify-between items-center px-4 py-3 hover:bg-gray-50">
+                  <span class="font-semibold text-gray-800">May 19 through 21, 2023</span>
+                  <svg class="w-5 h-5 text-gray-600 transition-transform duration-300 rotate-180" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                <div class="accordion-content max-h-96 opacity-100 border-t px-6 py-4 space-y-3">
+                  <div>
+                    <p class="text-sm text-gray-500">LEAVE TYPE</p>
+                    <p class="font-medium text-gray-800">Vacation</p>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">HOURS</p>
+                    <p class="font-medium text-gray-800">40</p>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">STATUS</p>
+                    <p class="font-medium text-blue-600">Being processed</p>
+                  </div>
+                  <button class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-md font-semibold">EDIT
+                    REQUEST</button>
+                </div>
+              </div>
+
+              <!-- Approved Leave Request -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button onclick="toggleDetails(this)"
+                  class="w-full flex justify-between items-center px-4 py-3 hover:bg-gray-50">
+                  <span class="flex items-center gap-2 text-gray-800 font-semibold">
+                    ✅ March 20 through 26, 2023
+                  </span>
+                  <svg class="w-5 h-5 text-gray-600 transition-transform duration-300" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div class="accordion-content max-h-0 opacity-0 border-t px-6 py-4 text-gray-600">
+                  <p>No additional details available.</p>
+                </div>
+              </div>
+
+              <!-- Another Approved Leave Request -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button onclick="toggleDetails(this)"
+                  class="w-full flex justify-between items-center px-4 py-3 hover:bg-gray-50">
+                  <span class="flex items-center gap-2 text-gray-800 font-semibold">
+                    ✅ December 24 through 28, 2022
+                  </span>
+                  <svg class="w-5 h-5 text-gray-600 transition-transform duration-300" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div class="accordion-content max-h-0 opacity-0 border-t px-6 py-4 text-gray-600">
+                  <p>No additional details available.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="">
+            <h2>Total</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <script src="./js/index.js"></script>
+  <script>
+    function toggleDetails(button) {
+      const details = button.nextElementSibling;
+      const icon = button.querySelector("svg");
+
+      if (details.style.maxHeight && details.style.maxHeight !== "0px") {
+        // Close
+        details.style.maxHeight = "0px";
+        details.style.height = "0px";
+        details.style.display = "none";
+        details.style.opacity = "0";
+        icon.classList.remove("rotate-180");
+      } else {
+        // Open
+        details.style.maxHeight = details.scrollHeight + "px";
+        details.style.height = details.scrollHeight + "px";
+        details.style.display = "block";
+        details.style.opacity = "1";
+        icon.classList.add("rotate-180");
+      }
+    }
+
+    // Initialize open section (first one)
+    window.addEventListener("load", () => {
+      document.querySelectorAll(".accordion-content").forEach(content => {
+        if (content.classList.contains("opacity-100")) {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pepsico | Time-off app</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  <!-- custom font  -->
+  <link rel="stylesheet" href="./fonts/stylesheet.css">
+
+
+
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader"
+    class="fixed inset-0 bg-info flex flex-col items-center justify-between z-50 transition-opacity duration-1000 min-h-screen py-[100px]">
+
+    <div class="">
+      <div
+        class="w-[117px] h-[117px] rounded-4xl bg-white flex justify-center items-center animate-bounce mb-10 mx-auto">
+        <img src="./images/logo.png" alt="logo">
+      </div>
+      <div class="animate-pulse text-center">
+        <h4 class="text-2xl text-white">Pepsico</h4>
+        <h3 class="text-[40px] leading-[60px] text-white font-bold">Time-off app</h3>
+      </div>
+    </div>
+
+
+    <div>
+      <p class="text-white mt-2 text-sm md:text-lg animate-fade">
+        Version 0.0
+      </p>
+    </div>
+  </div>
+
+
+
+  <main>
+    <section class="logIn bg-[#F8F8F9] min-h-screen flex flex-col justify-center items-center">
+      <div class="container !max-w-[1160px]">
+        <div
+          class="grid lg:grid-cols-2 grid-cols-1 lg:min-h-auto min-h-screen justify-between items-center gap-10 py-10">
+          <div class="col-span-1 lg:order-2">
+            <img src="./images/log-in-img.png" alt="log-in-img"
+              class="lg:ml-auto mx-auto lg:w-auto sm:w-[340px] w-[280px]">
+          </div>
+          <div class="col-span-1 lg:order-1">
+            <div class="flex flex-col lg:m-0 mx-auto w-[410px] max-w-full">
+              <div class="">
+                <h1 class="sm:text-4xl text-2xl font-bold text-center text-dark dm:mb-11 mb-6">Welcome</h1>
+
+                <!-- Username -->
+                <div class="mb-6">
+                  <input type="text" placeholder="Username"
+                    class="w-full min-h-14 sm:min-h-[70px] p-5 border-0 border-gray-300 rounded-md text-sm sm:text-xl placeholder:text-light text-dark bg-white focus:ring-2 focus:ring-info focus:outline-none" />
+                </div>
+
+                <!-- Password -->
+                <div class="mb-8 relative">
+                  <input id="password" type="password" placeholder="Password"
+                    class="w-full min-h-14 sm:min-h-[70px] p-5 border-0 border-gray-300 rounded-md text-sm sm:text-xl placeholder:text-light text-dark bg-white focus:ring-2 focus:ring-info focus:outline-none" />
+                  <span id="togglePassword"
+                    class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer">
+                    <!-- Eye Icon -->
+                    <svg id="eyeOpen" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block" fill="none"
+                      viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 
+                        7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    <!-- Eye Slash Icon -->
+                    <svg id="eyeClosed" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" fill="none"
+                      viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.477 0-8.268-2.943-9.542-7a9.956 
+                        9.956 0 012.563-4.357M6.219 6.219A9.956 9.956 0 0112 5c4.478 0 
+                        8.268 2.943 9.542 7a9.956 9.956 0 01-4.132 5.411M15 
+                        12a3 3 0 11-6 0 3 3 0 016 0zM3 3l18 18" />
+                    </svg>
+                  </span>
+                </div>
+
+                <div class="space-y-9">
+                  <div class="flex gap-3">
+                    <div class="flex  shrink-0 items-center ">
+                      <div class="group grid size-4 grid-cols-1 w-6 h-6 sm:w-[28px] sm:h-[28]">
+                        <input id="comments" type="checkbox" name="comments" checked
+                          class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-info checked:bg-info indeterminate:border-info indeterminate:bg-info focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-info disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 w-6 h-6 sm:w-[28px] sm:h-[28] justify-center" />
+                        <svg viewBox="0 0 14 14" fill="none"
+                          class="pointer-events-none col-start-1 row-start-1 size-4 sm:size-5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25 dark:group-has-disabled:stroke-white/25">
+                          <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="opacity-0 group-has-checked:opacity-100" />
+                          <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="opacity-0 group-has-indeterminate:opacity-100" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="text-sm/6">
+                      <label for="comments" class="text-dark sm:text-xl text-sm">Keep me logged in</label>
+                    </div>
+                  </div>
+
+
+                  <!-- Login Button -->
+                  <button
+                    class="w-full bg-info hover:bg-info/80 text-sm sm:text-xl uppercase cursor-pointer text-white font-bold p-3 rounded-sm border border-info  transition-colors">
+                    Log in
+                  </button>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="./js/index.js"></script>
+  <script>
+    // Preloader 
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      preloader.classList.add("opacity-0");
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 1000); // match duration-1000
+    });
+    // password show hide js script 
+    const passwordInput = document.getElementById("password");
+    const togglePassword = document.getElementById("togglePassword");
+    const eyeOpen = document.getElementById("eyeOpen");
+    const eyeClosed = document.getElementById("eyeClosed");
+
+    togglePassword.addEventListener("click", () => {
+      const isPassword = passwordInput.type === "password";
+      passwordInput.type = isPassword ? "text" : "password";
+      eyeOpen.classList.toggle("hidden");
+      eyeClosed.classList.toggle("hidden");
+    });
+  </script>
+</body>
+
+</html>
