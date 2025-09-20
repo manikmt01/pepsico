@@ -1,201 +1,140 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Smooth Accordion — Tailwind + Vanilla JS</title>
-  <!-- Tailwind CDN (for quick demo) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave Form</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
   <style>
-    /* transition for smooth height animation */
-    .accordion-content {
-      transition: height 280ms cubic-bezier(.4, 0, .2, 1);
-      overflow: hidden;
+    /* Override Flatpickr input style */
+    .flatpickr-input {
+      padding-left: 2.5rem;
+      /* space for icon */
     }
   </style>
 </head>
 
-<body class="bg-slate-50 min-h-screen flex items-start justify-center p-6">
-  <div class="w-full max-w-2xl">
-    <h2 class="text-2xl font-semibold mb-4">FAQ — Smooth Accordion</h2>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
 
-    <div class="space-y-2">
-      <!-- Accordion item (open by default) -->
-      <section class="bg-white rounded-lg shadow-sm overflow-hidden">
-        <h3>
-          <button
-            class="accordion-btn w-full text-left px-4 py-4 flex items-center justify-between focus:outline-none focus-visible:ring focus-visible:ring-indigo-300"
-            aria-expanded="true" aria-controls="acc-1" id="acc-btn-1">
-            <span class="font-medium">What is Tailwind CSS?</span>
-            <svg class="w-5 h-5 transform rotate-180" data-icon role="img" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 011.06.02L10 10.939l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
-                clip-rule="evenodd" />
-            </svg>
-          </button>
-        </h3>
+  <div class="bg-white p-6 rounded-xl shadow-md w-full max-w-3xl">
+    <div class="grid grid-cols-2 gap-6">
 
-        <div id="acc-1" role="region" aria-labelledby="acc-btn-1" class="accordion-content px-4"
-          style="height: auto; padding-bottom: 1rem; padding-top: 0.75rem;">
-          <div class="pb-3">
-            Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.
+      <!-- Leave Type -->
+      <div>
+        <h3 class="font-semibold text-gray-800 mb-3">Leave type</h3>
+        <div class="flex space-x-3 relative">
+
+          <!-- Leave -->
+          <label class="flex items-center gap-2 px-4 py-2 rounded-lg border cursor-pointer
+                        peer-checked:bg-green-500 peer-checked:text-white text-gray-600">
+            <input type="radio" name="leaveType" class="hidden peer" checked>
+            🏖️ Leave
+          </label>
+
+          <!-- Sick -->
+          <label class="flex items-center gap-2 px-4 py-2 rounded-lg border cursor-pointer
+                        peer-checked:bg-green-500 peer-checked:text-white text-gray-600">
+            <input type="radio" name="leaveType" class="hidden peer">
+            🌡️ Sick
+          </label>
+
+          <!-- Other Custom Dropdown -->
+          <div class="relative">
+            <button id="otherBtn"
+              class="flex items-center gap-2 px-4 py-2 rounded-lg border text-gray-600 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500">
+              Other ▼
+            </button>
+            <!-- Dropdown menu -->
+            <div id="otherMenu"
+              class="hidden absolute top-full left-0 mt-2 w-40 bg-white border rounded-lg shadow-lg z-50">
+              <button class="block w-full px-4 py-2 text-left hover:bg-gray-100">Personal</button>
+              <button class="block w-full px-4 py-2 text-left hover:bg-gray-100">Remote</button>
+              <button class="block w-full px-4 py-2 text-left hover:bg-gray-100">Holiday</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Period -->
+      <div>
+        <h3 class="font-semibold text-gray-800 mb-3">Period</h3>
+        <div class="flex space-x-3">
+          <!-- Start Date -->
+          <div class="relative w-full">
+            <i data-lucide="calendar-range" class="absolute left-3 top-2.5 text-gray-500"></i>
+            <input id="startDate" placeholder="Select date"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+          <!-- End Date -->
+          <div class="relative w-full">
+            <i data-lucide="calendar-range" class="absolute left-3 top-2.5 text-gray-500"></i>
+            <input id="endDate" placeholder="Select date"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- Accordion item (closed) -->
-      <section class="bg-white rounded-lg shadow-sm overflow-hidden">
-        <h3>
-          <button
-            class="accordion-btn w-full text-left px-4 py-4 flex items-center justify-between focus:outline-none focus-visible:ring focus-visible:ring-indigo-300"
-            aria-expanded="false" aria-controls="acc-2" id="acc-btn-2">
-            <span class="font-medium">How does the animation work?</span>
-            <svg class="w-5 h-5 transform" data-icon role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-              fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 011.06.02L10 10.939l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
-                clip-rule="evenodd" />
-            </svg>
-          </button>
-        </h3>
-
-        <div id="acc-2" role="region" aria-labelledby="acc-btn-2" class="accordion-content px-4"
-          style="height: 0; padding-top: 0; padding-bottom: 0;">
-          <div class="pt-3 pb-3">
-            The JS measures the content's scrollHeight and animates the inline height from 0 → scrollHeight. After
-            expand it sets height to auto so content can reflow.
-          </div>
-        </div>
-      </section>
-
-      <!-- Accordion item (closed) -->
-      <section class="bg-white rounded-lg shadow-sm overflow-hidden">
-        <h3>
-          <button
-            class="accordion-btn w-full text-left px-4 py-4 flex items-center justify-between focus:outline-none focus-visible:ring focus-visible:ring-indigo-300"
-            aria-expanded="false" aria-controls="acc-3" id="acc-btn-3">
-            <span class="font-medium">Can I use this in production?</span>
-            <svg class="w-5 h-5 transform" data-icon role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-              fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 011.06.02L10 10.939l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
-                clip-rule="evenodd" />
-            </svg>
-          </button>
-        </h3>
-
-        <div id="acc-3" role="region" aria-labelledby="acc-btn-3" class="accordion-content px-4"
-          style="height: 0; padding-top: 0; padding-bottom: 0;">
-          <div class="pt-3 pb-3">
-            Yes — this pattern is lightweight and accessible. Swap icons or styles to match your design system.
-          </div>
-        </div>
-      </section>
     </div>
   </div>
 
+  <!-- Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script>
-    // Smooth accordion toggle (accessible)
-    (function () {
-      const buttons = Array.from(document.querySelectorAll('.accordion-btn'));
-
-      // helper: rotate icon based on expanded
-      function setIcon(button, expanded) {
-        const svg = button.querySelector('svg[data-icon]');
-        if (!svg) return;
-        if (expanded) svg.classList.add('rotate-180');
-        else svg.classList.remove('rotate-180');
-      }
-
-      // toggle function for a pair (button + panel)
-      function toggle(button, panel) {
-        const isExpanded = button.getAttribute('aria-expanded') === 'true';
-
-        if (isExpanded) {
-          // collapse
-          // If height is auto, set explicit height first to allow transition
-          if (panel.style.height === 'auto') {
-            panel.style.height = panel.scrollHeight + 'px';
-            // force reflow to ensure transition picks up from current height
-            // eslint-disable-next-line no-unused-expressions
-            panel.offsetHeight;
-          }
-          panel.style.height = panel.scrollHeight + 'px'; // start from actual height
-          requestAnimationFrame(() => {
-            panel.style.height = '0px';
-            panel.style.paddingTop = '0';
-            panel.style.paddingBottom = '0';
-          });
-
-          button.setAttribute('aria-expanded', 'false');
-          setIcon(button, false);
-        } else {
-          // expand
-          // open: set to measured height, then clear to auto after transition
-          panel.style.display = 'block';
-          // ensure padding is restored
-          panel.style.paddingTop = '';
-          panel.style.paddingBottom = '';
-
-          // start from 0 (in case it was 0)
-          panel.style.height = '0px';
-          // force reflow
-          // eslint-disable-next-line no-unused-expressions
-          panel.offsetHeight;
-
-          const target = panel.scrollHeight;
-          panel.style.height = target + 'px';
-
-          button.setAttribute('aria-expanded', 'true');
-          setIcon(button, true);
-
-          // after transition, set height to auto so content can grow/shrink naturally
-          const transitionEnd = function () {
-            // only run for height transitions
-            panel.style.height = 'auto';
-            panel.removeEventListener('transitionend', transitionEnd);
-          };
-          panel.addEventListener('transitionend', transitionEnd);
-        }
-      }
-
-      // initialize panels/buttons
-      buttons.forEach(btn => {
-        const panelId = btn.getAttribute('aria-controls');
-        const panel = document.getElementById(panelId);
-        if (!panel) return;
-
-        // If aria-expanded true at load -> open
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        if (expanded) {
-          // set explicit height to auto so content shows (we keep auto for initial)
-          panel.style.height = 'auto';
-          panel.style.paddingTop = '';
-          panel.style.paddingBottom = '';
-          setIcon(btn, true);
-        } else {
-          panel.style.height = '0';
-          panel.style.paddingTop = '0';
-          panel.style.paddingBottom = '0';
-          setIcon(btn, false);
-        }
-
-        // click handler
-        btn.addEventListener('click', () => toggle(btn, panel));
-
-        // keyboard: Space / Enter also toggle (buttons already handle Enter/Space by default,
-        // but we ensure consistent behavior)
-        btn.addEventListener('keydown', (e) => {
-          if (e.key === ' ' || e.key === 'Spacebar' || e.key === 'Enter') {
-            e.preventDefault();
-            btn.click();
-          }
-        });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Recommended: use altInput so display is "May 21, 2023"
+      flatpickr("#startDate", {
+        // use ISO for internal value; alt shows human-friendly format
+        dateFormat: "Y-m-d",       // underlying value (good for forms/APIs)
+        altInput: true,
+        altFormat: "F j, Y",       // => "May 19, 2023"
+        defaultDate: "2023-05-19", // ISO works reliably
+        allowInput: true
       });
-    })();
+
+      flatpickr("#endDate", {
+        dateFormat: "Y-m-d",
+        altInput: true,
+        altFormat: "F j, Y",
+        defaultDate: "2023-05-21", // ISO string is OK
+        allowInput: true
+      });
+
+      // Alternative if you want to pass a Date object:
+      // defaultDate: new Date(2023, 4, 21)  // months are 0-indexed: 4 = May
+    });
+
+    // Custom Dropdown
+    const otherBtn = document.getElementById("otherBtn");
+    const otherMenu = document.getElementById("otherMenu");
+
+    otherBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      otherMenu.classList.toggle("hidden");
+    });
+
+    document.addEventListener("click", () => {
+      otherMenu.classList.add("hidden");
+    });
+
+    otherMenu.querySelectorAll("button").forEach(option => {
+      option.addEventListener("click", () => {
+        otherBtn.textContent = option.textContent;
+        otherMenu.classList.add("hidden");
+      });
+    });
+
+    // Load icons
+    lucide.createIcons();
   </script>
+
 </body>
 
 </html>

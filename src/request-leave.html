@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pepsico | Time-off app</title>
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <!-- custom font  -->
   <link rel="stylesheet" href="./fonts/stylesheet.css">
 
@@ -20,7 +23,7 @@
   <header class="bg-white  lg:py-10 sm:py-8 py-5 sticky top-0 left-0 z-50 border-b border-[#f1f1f1]">
     <div class="container flex flex-row items-center justify-between flex-wrap">
       <div class="">
-        <h2 class="text-2xl sm:text-3xl lg:text-4xl text-dark font-bold">Notifications</h2>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl text-dark font-bold">Request leave</h2>
       </div>
       <div class="">
         <ul class="flex flex-row justify-end flex-wrap gap-20 items-center">
@@ -115,7 +118,7 @@
   </header>
 
   <!-- menubar for the mobile start  -->
-  <nav class="sm:hidden block fixed bottom-0 left-0 w-full bg-white z-50 shadow-lg">
+  <nav class="lg:hidden block fixed bottom-0 left-0 w-full bg-white z-50 shadow-lg">
 
     <ul class="grid grid-cols-4 items-center">
       <li class="border-r border-[#f2f2f2] h-full flex justify-center items-center">
@@ -207,133 +210,199 @@
   <main>
     <section class="bg-white py-6">
       <div class="container">
-        <div class="flex flex-row justify-between items-center lg:px-6 lg:w-auto w-[505px] max-w-full lg:mx-0 mx-auto">
-          <button class="cursor-pointer"><img src="./images/chevron-left.svg" alt="left"
-              class="sm:w-auto w-[6px]"></button>
-          <h2 class="lg:text-2xl sm:text-xl text-sm text-dark font-bold">2025</h2>
-          <button class="cursor-pointer"><img src="./images/chevron-right.svg" alt="right"
-              class="sm:w-auto w-[6px]"></button>
+        <div class="flex flex-row justify-between items-center">
+          <div class="flex flex-row gap-5 items-center">
+            <div class="">
+              <img src="./images/homepage_careers_card_009-caglar-kaya.png" alt="user"
+                class="w-9 h-9 sm:w-[45px] sm:h-[45px] rounded-full">
+            </div>
+            <h2 class="text-sm sm:text-xl font-bold">Bas Meijerink</h2>
+          </div>
+          <div class="">
+            <h3 class="text-sm sm:text-xl font-bold text-success">12/25</h3>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="sm:py-14 py-6">
+    <section class="py-11">
       <div class="container">
-        <ul class="flex flex-col gap-4 sm:gap-9 lg:w-auto w-[505px] max-w-full mx-auto">
-          <!-- single item start  -->
-          <li>
-            <a class="bg-white rounded-xl flex flex-col w-full">
-              <span
-                class="flex flex-row sm:gap-5 gap-3 items-center py-3 sm:py-3.5 px-3.5 sm:px-5 border-b border-[#f1f1f1]">
+        <div class="grid lg:grid-cols-11 grid-cols-1 gap-8 lg:gap-[95px] py-5 px-9 bg-white rounded-lg">
+          <div class="lg:col-span-6">
+            <!-- Leave Type -->
+            <div>
+              <h3 class="font-bold text-3xl mb-6">Leave type</h3>
+              <div class="flex space-x-5 relative">
 
-                <span class="sm:w-auto w-4 flex justify-center items-center">
-                  <img src="./images/hourglass.png" alt="hourglass" class="sm:w-auto w-4">
-                </span>
-                <span class="flex flex-col">
-                  <span class="flex flow-row text-[10px] sm:text-base text-dark">
-                    <span>12-12-2025</span>
-                    <span>12:36</span>
+                <!-- Leave -->
+                <label
+                  class="flex items-center gap-5 px-[18px] py-2.5 border border-[#f1f1f1] cursor-pointer text-xl w-full   has-[:checked]:bg-success has-[:checked]:text-white has-[:checked]:border-success rounded-lg">
+                  <input type="radio" name="leaveType" class="hidden" checked>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28.918" height="28.918" viewBox="0 0 28.918 28.918">
+                      <path id="leave"
+                        d="M30.1,21.069a2.849,2.849,0,0,0-3.559-4.449l-2.966,2.373a4.83,4.83,0,0,1-3.01,1.053H17.821V13.372h7.86A2.519,2.519,0,0,0,28.2,10.851a8.607,8.607,0,0,0-8.6-8.6H13.832a8.607,8.607,0,0,0-8.6,8.6,2.519,2.519,0,0,0,2.521,2.521h7.86v6.673H5.1A2.848,2.848,0,0,0,2.25,22.893v.979A2.848,2.848,0,0,0,5.1,26.719H7.218L5.409,29.433a1.107,1.107,0,0,0,.311,1.542,1.183,1.183,0,0,0,.623.193,1.114,1.114,0,0,0,.919-.489l2.64-3.96H20.579l2.64,3.96a1.078,1.078,0,0,0,.919.489,1.1,1.1,0,0,0,.623-.193,1.12,1.12,0,0,0,.311-1.542l-2.091-3.144a7.144,7.144,0,0,0,2-1.112l5.131-4.108ZM14.677,6.921a8.719,8.719,0,0,1,2.032-2.21,8.477,8.477,0,0,1,2.032,2.21,8.772,8.772,0,0,1,1.32,4.226H13.372a8.772,8.772,0,0,1,1.32-4.226Zm11.3,3.93a.3.3,0,0,1-.3.3H22.27a10.978,10.978,0,0,0-1.661-5.413,11.039,11.039,0,0,0-.949-1.246,6.393,6.393,0,0,1,6.317,6.377Zm-18.537,0a6.393,6.393,0,0,1,6.317-6.377,12.559,12.559,0,0,0-.949,1.246,10.978,10.978,0,0,0-1.661,5.413H7.737a.3.3,0,0,1-.3-.3ZM20.565,24.495H5.1a.627.627,0,0,1-.623-.623v-.979A.627.627,0,0,1,5.1,22.27H20.565a7.107,7.107,0,0,0,4.4-1.542l2.966-2.373a.63.63,0,0,1,.667-.074.6.6,0,0,1,.356.564.626.626,0,0,1-.237.489h0L23.59,23.442a4.83,4.83,0,0,1-3.01,1.053Z"
+                        transform="translate(-2.25 -2.25)" fill="currentColor" />
+                    </svg>
+
                   </span>
-                  <span class="text-sm sm:text-[22px] sm:leading-tight font-bold">Request submitted</span>
-                </span>
-              </span>
-              <span class="flex lg:flex-row flex-col justify-between py-4 sm:py-7 px-3.5 sm:px-5 lg:gap-0 gap-2">
-                <span class="text-sm sm:text-[21px] sm:leading-tight font-bold">May 19 to 21, 2025</span>
-                <span class="flex flow-row items-center text-[10px] sm:text-base text-dark gap-[6px] sm:gap-6">
-                  <span>Hours</span>
-                  <span class="text-sm sm:text-[21px] sm:leading-tight font-bold">40</span>
-                </span>
-              </span>
-            </a>
-          </li>
-          <!-- single item end  -->
+                  <span>Leave</span>
+                </label>
 
-          <!-- single item start  -->
-          <li>
-            <a class="bg-white rounded-xl flex flex-col w-full">
-              <span
-                class="flex flex-row sm:gap-5 gap-3 items-center py-3 sm:py-3.5 px-3.5 sm:px-5 border-b border-[#f1f1f1]">
-                <span class="sm:w-auto w-4 flex justify-center items-center">
-                  <img src="./images/calendar-delete.png" alt="calendar-delete" class="sm:w-auto w-4">
-                </span>
-                <span class="flex flex-col">
-                  <span class="flex flow-row text-[10px] sm:text-base text-dark">
-                    <span>12-12-2025</span>
-                    <span>12:36</span>
+                <!-- Sick -->
+                <label
+                  class="flex items-center gap-5 px-[18px] py-2.5 border border-[#f1f1f1] cursor-pointer text-xl w-full   has-[:checked]:bg-success has-[:checked]:text-white has-[:checked]:border-success rounded-lg">
+                  <input type="radio" name="leaveType" class="hidden">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38.537" height="38.537" viewBox="0 0 38.537 38.537">
+                      <g id="slick" transform="translate(0 19.278) rotate(-45)">
+                        <g id="Group_3" data-name="Group 3" transform="translate(0 0)">
+                          <path id="Path_17" data-name="Path 17"
+                            d="M27.25,5.265a5.262,5.262,0,0,0-8.985-3.72L8.69,11.119a8.113,8.113,0,0,0-7.272,3.5,8.02,8.02,0,0,0-.126,8.915,8.128,8.128,0,0,0,5.967,3.664q.421.042.842.042a8.079,8.079,0,0,0,5.7-2.359,8,8,0,0,0,2.345-6.318l9.575-9.575a5.225,5.225,0,0,0,1.544-3.72ZM24.217,7.5l-9.926,9.926a1.017,1.017,0,0,0-.295.9,5.952,5.952,0,0,1-1.685,5.068A5.893,5.893,0,0,1,7.482,25.1,6.015,6.015,0,0,1,3.06,22.379a5.925,5.925,0,0,1,.1-6.556A6.008,6.008,0,0,1,8.1,13.211a5.661,5.661,0,0,1,.842.056,1.118,1.118,0,0,0,.9-.295l9.926-9.926A3.156,3.156,0,0,1,22,2.12a3.1,3.1,0,0,1,2.232.927,3.156,3.156,0,0,1,.927,2.232,3.1,3.1,0,0,1-.927,2.232Z"
+                            transform="translate(0 0)" fill="currentColor" />
+                          <path id="Path_18" data-name="Path 18"
+                            d="M17.03.305,5.742,11.593A3.858,3.858,0,0,0,0,14.948,3.859,3.859,0,0,0,3.861,18.8a3.859,3.859,0,0,0,3.861-3.847,3.721,3.721,0,0,0-.505-1.867l11.3-11.288A1.052,1.052,0,1,0,17.03.305ZM5.11,16.184a1.754,1.754,0,0,1-2.485,0,1.732,1.732,0,0,1-.519-1.235,1.709,1.709,0,0,1,.519-1.235,1.757,1.757,0,0,1,1.235-.519,1.7,1.7,0,0,1,1.235.519,1.732,1.732,0,0,1,.519,1.235A1.709,1.709,0,0,1,5.1,16.184Z"
+                            transform="translate(4.211 4.215)" fill="currentColor" />
+                        </g>
+                      </g>
+                    </svg>
+
                   </span>
-                  <span class="text-sm sm:text-[22px] sm:leading-tight font-bold">Request denied</span>
-                </span>
-              </span>
-              <span class="flex lg:flex-row flex-col justify-between py-4 sm:py-7 px-3.5 sm:px-5 lg:gap-0 gap-2">
-                <span class="text-sm sm:text-[21px] sm:leading-tight font-bold">May 19 to 21, 2025</span>
-                <span class="flex flow-row items-center text-[10px] sm:text-base text-dark gap-[6px] sm:gap-6">
-                  <span>Hours</span>
-                  <span class="text-sm sm:text-[21px] sm:leading-tight font-bold">40</span>
-                </span>
-              </span>
-            </a>
-          </li>
-          <!-- single item end  -->
-          <!-- single item start  -->
-          <li>
-            <a class="bg-white rounded-xl flex flex-col w-full">
-              <span
-                class="flex flex-row sm:gap-5 gap-3 items-center py-3 sm:py-3.5 px-3.5 sm:px-5 border-b border-[#f1f1f1]">
-                <span class="sm:w-auto w-4 flex justify-center items-center">
-                  <img src="./images/edit.svg" alt="edit" class="sm:w-auto w-4">
-                </span>
+                  <span>Sick</span>
+                </label>
 
-                <span class="flex flex-col">
-                  <span class="flex flow-row text-[10px] sm:text-base text-dark">
-                    <span>12-12-2025</span>
-                    <span>12:36</span>
-                  </span>
-                  <span class="text-sm sm:text-[22px] sm:leading-tight font-bold">Request adjusted by you</span>
-                </span>
-              </span>
-              <span class="flex flex-col gap-1 py-4 sm:py-7 px-3.5 sm:px-5">
-                <span class="text-sm sm:text-[21px] sm:leading-tight font-bold">New date: March 22 to 24, 20255</span>
-                <del class="text-sm sm:text-[21px] sm:leading-tight font-bold">March 20 to 26, 2025</del>
-              </span>
-            </a>
-          </li>
-          <!-- single item end  -->
+                <!-- Other Custom Dropdown -->
+                <div class="relative w-full">
 
-          <!-- single item start  -->
-          <li>
-            <a class="bg-white rounded-xl flex flex-col w-full">
-              <span
-                class="flex flex-row sm:gap-5 gap-3 items-center py-3 sm:py-3.5 px-3.5 sm:px-5 border-b border-[#f1f1f1]">
-                <span class="sm:w-auto w-4 flex justify-center items-center">
-                  <img src="./images/approved.svg" alt="approved" class="sm:w-auto w-4">
-                </span>
+                  <div class="relative h-full">
+                    <button id="otherBtn"
+                      class="flex items-center text-xl gap-2 pl-5 pr-10 py-3.5 rounded-lg border border-[#f1f1f1]  focus:ring-1 w-full h-full">
+                      Other
+                    </button>
+                    <img src="./images/chevron-bottom.svg" alt="chevron"
+                      class="absolute right-5 top-1/2 -translate-y-1/2">
 
-                <span class="flex flex-col">
-                  <span class="flex flow-row text-[10px] sm:text-base text-dark">
-                    <span>12-12-2025</span>
-                    <span>12:36</span>
-                  </span>
-                  <span class="text-sm sm:text-[22px] sm:leading-tight font-bold">Request approved</span>
-                </span>
-              </span>
-              <span class="flex flex-col gap-1 py-4 sm:py-7 px-3.5 sm:px-5">
-                <span class="text-sm sm:text-[21px] sm:leading-tight font-bold">New date: March 22 to 24, 20255</span>
-                <del class="text-sm sm:text-[21px] sm:leading-tight font-bold">March 20 to 26, 2025</del>
-              </span>
-            </a>
-          </li>
-          <!-- single item end  -->
+                  </div>
+                  <!-- Dropdown menu -->
+                  <div id="otherMenu"
+                    class="hidden absolute top-full right-0 mt-2 sm:w-[330px] w-full bg-white border rounded-lg shadow-lg z-50 p-1">
+                    <button
+                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Training</button>
+                    <button
+                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Parttime</button>
+                    <button
+                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">QFS/VVT</button>
+                    <button
+                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">BHV
+                      Training</button>
+                    <button
+                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Kaizen</button>
+                    <button
+                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Bijzonder
+                      verlof</button>
+                    <button
+                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">FLM
+                      relief</button>
+                    <button
+                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Other
+                      shift</button>
+                    <button
+                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Re-integration</button>
+                    <button
+                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">OR</button>
+                    <button
+                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Vervangend
+                      TE</button>
+                    <button
+                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">SET/TE
+                      Dag</button>
+                    <button
+                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">62+
+                      dag</button>
+                    <button
+                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Verlofregeling</button>
 
+                  </div>
+                </div>
 
-        </ul>
+              </div>
+            </div>
 
+          </div>
+          <div class="lg:col-span-5">
+            <h3 class="font-bold text-3xl mb-6">Period</h3>
+            <div class="flex flex-row  gap-8">
+              <!-- Start Date -->
+              <div class="relative w-full">
+                <img src="./images/date-from.svg" alt="date" class="absolute left-5 top-1/2 -translate-y-1/2">
+                <input id="startDate" placeholder="Select date"
+                  class="w-full pl-16 pr-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 text-xl">
+              </div>
+              <!-- End Date -->
+              <div class="relative w-full">
+                <img src="./images/date-from.svg" alt="date" class="absolute left-5 top-1/2 -translate-y-1/2">
+                <input id="endDate" placeholder="Select date"
+                  class="w-full pl-16 pr-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 text-xl">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
 
   </main>
 
 
   <script src="./js/index.js"></script>
+  <!-- Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Recommended: use altInput so display is "May 21, 2023"
+      flatpickr("#startDate", {
+        // use ISO for internal value; alt shows human-friendly format
+        dateFormat: "Y-m-d",       // underlying value (good for forms/APIs)
+        altInput: true,
+        altFormat: "F j, Y",       // => "May 19, 2023"
+        defaultDate: "2023-05-19", // ISO works reliably
+        allowInput: true
+      });
+
+      flatpickr("#endDate", {
+        dateFormat: "Y-m-d",
+        altInput: true,
+        altFormat: "F j, Y",
+        defaultDate: "2023-05-21", // ISO string is OK
+        allowInput: true
+      });
+
+      // Alternative if you want to pass a Date object:
+      // defaultDate: new Date(2023, 4, 21)  // months are 0-indexed: 4 = May
+    });
+
+    // Custom Dropdown
+    const otherBtn = document.getElementById("otherBtn");
+    const otherMenu = document.getElementById("otherMenu");
+
+    otherBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      otherMenu.classList.toggle("hidden");
+    });
+
+    document.addEventListener("click", () => {
+      otherMenu.classList.add("hidden");
+    });
+
+    otherMenu.querySelectorAll("button").forEach(option => {
+      option.addEventListener("click", () => {
+        otherBtn.textContent = option.textContent;
+        otherMenu.classList.add("hidden");
+      });
+    });
+
+  </script>
+
 </body>
 
 </html>
