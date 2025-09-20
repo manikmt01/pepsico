@@ -227,19 +227,20 @@
 
     <section class="py-11">
       <div class="container">
-        <div class="grid lg:grid-cols-11 grid-cols-1 gap-8 lg:gap-[95px] py-5 px-9 bg-white rounded-lg">
+        <div
+          class="grid lg:grid-cols-11 grid-cols-1 gap-6 md:gap-8 lg:gap-[95px] md:py-5 py-2.5 px-3 md:px-9 bg-white rounded-lg">
           <div class="lg:col-span-6">
             <!-- Leave Type -->
             <div>
-              <h3 class="font-bold text-3xl mb-6">Leave type</h3>
-              <div class="flex space-x-5 relative">
+              <h3 class="font-bold text-base md:text-3xl mb-3 md:mb-6">Leave type</h3>
+              <div class="flex md:space-x-5 space-x-2 relative">
 
                 <!-- Leave -->
                 <label
-                  class="flex items-center gap-5 px-[18px] py-2.5 border border-[#f1f1f1] cursor-pointer text-xl w-full   has-[:checked]:bg-success has-[:checked]:text-white has-[:checked]:border-success rounded-lg">
+                  class="flex items-center gap-1.5 md:gap-5 px-2.5 lg:px-[18px] py-2 lg:py-2.5 border border-[#f1f1f1] cursor-pointer text-sm md:text-xl w-full   has-[:checked]:bg-success has-[:checked]:text-white has-[:checked]:border-success rounded-lg">
                   <input type="radio" name="leaveType" class="hidden" checked>
                   <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28.918" height="28.918" viewBox="0 0 28.918 28.918">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="md:w-[28px] w-4" viewBox="0 0 28.918 28.918">
                       <path id="leave"
                         d="M30.1,21.069a2.849,2.849,0,0,0-3.559-4.449l-2.966,2.373a4.83,4.83,0,0,1-3.01,1.053H17.821V13.372h7.86A2.519,2.519,0,0,0,28.2,10.851a8.607,8.607,0,0,0-8.6-8.6H13.832a8.607,8.607,0,0,0-8.6,8.6,2.519,2.519,0,0,0,2.521,2.521h7.86v6.673H5.1A2.848,2.848,0,0,0,2.25,22.893v.979A2.848,2.848,0,0,0,5.1,26.719H7.218L5.409,29.433a1.107,1.107,0,0,0,.311,1.542,1.183,1.183,0,0,0,.623.193,1.114,1.114,0,0,0,.919-.489l2.64-3.96H20.579l2.64,3.96a1.078,1.078,0,0,0,.919.489,1.1,1.1,0,0,0,.623-.193,1.12,1.12,0,0,0,.311-1.542l-2.091-3.144a7.144,7.144,0,0,0,2-1.112l5.131-4.108ZM14.677,6.921a8.719,8.719,0,0,1,2.032-2.21,8.477,8.477,0,0,1,2.032,2.21,8.772,8.772,0,0,1,1.32,4.226H13.372a8.772,8.772,0,0,1,1.32-4.226Zm11.3,3.93a.3.3,0,0,1-.3.3H22.27a10.978,10.978,0,0,0-1.661-5.413,11.039,11.039,0,0,0-.949-1.246,6.393,6.393,0,0,1,6.317,6.377Zm-18.537,0a6.393,6.393,0,0,1,6.317-6.377,12.559,12.559,0,0,0-.949,1.246,10.978,10.978,0,0,0-1.661,5.413H7.737a.3.3,0,0,1-.3-.3ZM20.565,24.495H5.1a.627.627,0,0,1-.623-.623v-.979A.627.627,0,0,1,5.1,22.27H20.565a7.107,7.107,0,0,0,4.4-1.542l2.966-2.373a.63.63,0,0,1,.667-.074.6.6,0,0,1,.356.564.626.626,0,0,1-.237.489h0L23.59,23.442a4.83,4.83,0,0,1-3.01,1.053Z"
                         transform="translate(-2.25 -2.25)" fill="currentColor" />
@@ -251,10 +252,10 @@
 
                 <!-- Sick -->
                 <label
-                  class="flex items-center gap-5 px-[18px] py-2.5 border border-[#f1f1f1] cursor-pointer text-xl w-full   has-[:checked]:bg-success has-[:checked]:text-white has-[:checked]:border-success rounded-lg">
+                  class="flex items-center gap-1.5 md:gap-5 px-2.5 lg:px-[18px] py-2 lg:py-2.5 border border-[#f1f1f1] cursor-pointer text-sm md:text-xl w-full   has-[:checked]:bg-success has-[:checked]:text-white has-[:checked]:border-success rounded-lg">
                   <input type="radio" name="leaveType" class="hidden">
                   <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="38.537" height="38.537" viewBox="0 0 38.537 38.537">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="md:w-[38px] w-5" viewBox="0 0 38.537 38.537">
                       <g id="slick" transform="translate(0 19.278) rotate(-45)">
                         <g id="Group_3" data-name="Group 3" transform="translate(0 0)">
                           <path id="Path_17" data-name="Path 17"
@@ -276,51 +277,51 @@
 
                   <div class="relative h-full">
                     <button id="otherBtn"
-                      class="flex items-center text-xl gap-2 pl-5 pr-10 py-3.5 rounded-lg border border-[#f1f1f1]  focus:ring-1 w-full h-full">
+                      class="flex items-center text-sm md:text-xl gap-2 pl-2.5 md:pl-5 lg:pr-10 pr-4 py-2.5 md:py-3.5 rounded-lg border border-[#f1f1f1]  focus:ring-1 w-full h-full">
                       Other
                     </button>
                     <img src="./images/chevron-bottom.svg" alt="chevron"
-                      class="absolute right-5 top-1/2 -translate-y-1/2">
+                      class="absolute right-2 md:right-5 top-1/2 -translate-y-1/2 md:w-auto w-2">
 
                   </div>
                   <!-- Dropdown menu -->
                   <div id="otherMenu"
-                    class="hidden absolute top-full right-0 mt-2 sm:w-[330px] w-full bg-white border rounded-lg shadow-lg z-50 p-1">
+                    class="hidden absolute top-full right-0 mt-2 sm:w-[330px] w-[200px] bg-white border rounded-lg shadow-lg z-20 p-1">
                     <button
-                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Training</button>
+                      class="block w-full px-4 py-2.5 text-left text-sm md:text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1] cursor-pointer">Training</button>
                     <button
-                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Parttime</button>
+                      class="block w-full px-4 py-2.5 text-left text-sm md:text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1] cursor-pointer">Parttime</button>
                     <button
-                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">QFS/VVT</button>
+                      class="block w-full px-4 py-2.5 text-left text-sm md:text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1] cursor-pointer">QFS/VVT</button>
                     <button
-                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">BHV
+                      class="block w-full px-4 py-2.5 text-left text-sm md:text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1] cursor-pointer">BHV
                       Training</button>
                     <button
-                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Kaizen</button>
+                      class="block w-full px-4 py-2.5 text-left text-sm md:text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1] cursor-pointer">Kaizen</button>
                     <button
-                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Bijzonder
+                      class="block w-full px-4 py-2.5 text-left text-sm md:text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1] cursor-pointer">Bijzonder
                       verlof</button>
                     <button
-                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">FLM
+                      class="block w-full px-4 py-2.5 text-left text-sm md:text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1] cursor-pointer">FLM
                       relief</button>
                     <button
-                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Other
+                      class="block w-full px-4 py-2.5 text-left text-sm md:text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1] cursor-pointer">Other
                       shift</button>
                     <button
-                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Re-integration</button>
+                      class="block w-full px-4 py-2.5 text-left text-sm md:text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1] cursor-pointer">Re-integration</button>
                     <button
-                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">OR</button>
+                      class="block w-full px-4 py-2.5 text-left text-sm md:text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1] cursor-pointer">OR</button>
                     <button
-                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Vervangend
+                      class="block w-full px-4 py-2.5 text-left text-sm md:text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1] cursor-pointer">Vervangend
                       TE</button>
                     <button
-                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">SET/TE
+                      class="block w-full px-4 py-2.5 text-left text-sm md:text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1] cursor-pointer">SET/TE
                       Dag</button>
                     <button
-                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">62+
+                      class="block w-full px-4 py-2.5 text-left text-sm md:text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1] cursor-pointer">62+
                       dag</button>
                     <button
-                      class="block w-full px-4 py-2.5 text-left text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1]">Verlofregeling</button>
+                      class="block w-full px-4 py-2.5 text-left text-sm md:text-xl hover:text-info hover:bg-light/20 border-b border-[#f1f1f1] cursor-pointer">Verlofregeling</button>
 
                   </div>
                 </div>
@@ -330,21 +331,268 @@
 
           </div>
           <div class="lg:col-span-5">
-            <h3 class="font-bold text-3xl mb-6">Period</h3>
-            <div class="flex flex-row  gap-8">
+            <h3 class="font-bold text-base md:text-3xl mb-3 md:mb-6">Period</h3>
+            <div class="flex flex-row gap-3  md:gap-8">
               <!-- Start Date -->
               <div class="relative w-full">
-                <img src="./images/date-from.svg" alt="date" class="absolute left-5 top-1/2 -translate-y-1/2">
+                <img src="./images/date-from.svg" alt="date"
+                  class="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 md:w-auto w-4">
                 <input id="startDate" placeholder="Select date"
-                  class="w-full pl-16 pr-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 text-xl">
+                  class="w-full pl-9 md:pl-16 pr-2 md:pr-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 text-sm md:text-xl">
               </div>
               <!-- End Date -->
               <div class="relative w-full">
-                <img src="./images/date-from.svg" alt="date" class="absolute left-5 top-1/2 -translate-y-1/2">
+                <img src="./images/date-from.svg" alt="date"
+                  class="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 md:w-auto w-4">
                 <input id="endDate" placeholder="Select date"
-                  class="w-full pl-16 pr-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 text-xl">
+                  class="w-full pl-9 md:pl-16 pr-2 md:pr-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 text-sm md:text-xl">
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="lg:py-20 pt-0 pb-10">
+      <div class="container bg-white rounded-lg pb-12">
+        <!-- calendar  -->
+        <div class="bg-white rounded-md w-[475px] mx-auto max-w-full">
+          <!-- Header -->
+          <div class="mb-5 py-4 sm:py-7">
+            <div class="flex justify-between items-center lg:w-auto max-w-full w-[505px] mx-auto">
+              <button class="cursor-pointer"><img src="./images/chevron-left.svg" alt="chevron-left"
+                  class="sm:w-auto w-2"></button>
+              <h2 class="text-sm sm:text-2xl font-bold text-dark">March 2023</h2>
+              <button class="cursor-pointer"><img src="./images/chevron-right.svg" alt="chevron-right"
+                  class="sm:w-auto w-2"></button>
+            </div>
+          </div>
+
+          <!-- Weekdays -->
+          <div
+            class="grid grid-cols-7 text-center text-xs sm:text-xl font-bold text-dark mb-4 sm:mb-7 lg:w-auto max-w-full w-[505px] mx-auto">
+            <div>MO</div>
+            <div>TU</div>
+            <div>WE</div>
+            <div>TH</div>
+            <div>FR</div>
+            <div>SA</div>
+            <div>SU</div>
+          </div>
+
+          <!-- Calendar Grid -->
+          <div class="grid grid-cols-7 gap-2.5 text-center pb-8 lg:w-auto max-w-full w-[505px] mx-auto">
+            <!-- Empty Days -->
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-light border border-[#f1f1f1]">
+              27</div>
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-light border border-[#f1f1f1]">
+              28</div>
+
+            <!-- Row 1 -->
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>1</span>
+
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>2</span>
+
+            </div>
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>3</span>
+
+            </div>
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>4</span>
+
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>5</span>
+            </div>
+
+            <!-- Row 2 -->
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>6</span>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1] bg-light">
+              <span>7</span>
+
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1] bg-light">
+              <span>8</span>
+
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1] bg-light">
+              <span>9</span>
+
+            </div>
+
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>10</span>
+
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>11</span>
+
+            </div>
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>12</span>
+
+            </div>
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>13</span>
+            </div>
+
+
+
+
+            <!-- Row 3 -->
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>14</span>
+
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>15</span>
+
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>16</span>
+
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-white border border-[#f1f1f1] bg-success">
+              <span>17</span>
+
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-white border border-[#f1f1f1] bg-success">
+              <span>18</span>
+
+            </div>
+
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-white border border-[#f1f1f1] bg-success">
+              <span>19</span>
+            </div>
+
+            <!-- Row 4 -->
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-white border border-[#f1f1f1] bg-success">
+              <span>20</span>
+
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-white border border-[#f1f1f1] bg-success">
+              <span>21</span>
+
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>22</span>
+
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>23</span>
+
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>24</span>
+
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>25</span>
+
+            </div>
+
+
+            <!-- Row 5 -->
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>26</span>
+
+            </div>
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>27</span>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>28</span>
+
+            </div>
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>29</span>
+
+            </div>
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>30</span>
+
+            </div>
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-dark border border-[#f1f1f1]">
+              <span>31</span>
+
+            </div>
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-light border border-[#f1f1f1]">
+              <span>1</span>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center p-2 lg:p-3.5 rounded-md min-h-[38px] sm:min-h-[62px] text-sm sm:text-lg lg:text-xl text-light border border-[#f1f1f1]">
+              <span>2</span>
+
+            </div>
+
+
+
+
+
+
+          </div>
+          <div>
+            <button
+              class="w-full bg-info hover:bg-info/80 text-sm sm:text-xl uppercase cursor-pointer text-white font-bold p-3 rounded-sm border border-info  transition-colors">
+              Edit request
+            </button>
           </div>
         </div>
       </div>
