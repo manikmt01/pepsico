@@ -361,20 +361,21 @@
     document.addEventListener('DOMContentLoaded', function () {
       // Recommended: use altInput so display is "May 21, 2023"
       flatpickr("#startDate", {
-        // use ISO for internal value; alt shows human-friendly format
-        dateFormat: "Y-m-d",       // underlying value (good for forms/APIs)
+        dateFormat: "Y-m-d",
         altInput: true,
-        altFormat: "F j, Y",       // => "May 19, 2023"
-        defaultDate: "2023-05-19", // ISO works reliably
-        allowInput: true
+        altFormat: "F j, Y",
+        defaultDate: "2023-05-19",
+        allowInput: true,
+        disableMobile: true // <-- Add this line
       });
 
       flatpickr("#endDate", {
         dateFormat: "Y-m-d",
         altInput: true,
         altFormat: "F j, Y",
-        defaultDate: "2023-05-21", // ISO string is OK
-        allowInput: true
+        defaultDate: "2023-05-21",
+        allowInput: true,
+        disableMobile: true // <-- Add this line
       });
 
       // Alternative if you want to pass a Date object:
